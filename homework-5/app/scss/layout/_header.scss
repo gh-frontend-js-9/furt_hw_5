@@ -1,0 +1,20 @@
+.header-section__wrapper {
+    @extend %wrapper;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding: 30px 15px 10px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: $red-color;
+    &__text {
+    font-family: $montserrat-regular;
+    color: $white-color;
+    font-size: 15px;
+    &:after{
+        content:'.';
+        font-weight: 600;
+        color: $blue-color;
+    }}
+
+}

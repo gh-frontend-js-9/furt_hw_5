@@ -1,0 +1,31 @@
+.footer__wrapper{
+    @extend %wrapper;
+}
+.footer__copyright{
+    @include text-size-sm;
+    color: $lighter-gray-color;
+    padding: 0px 10px;
+}
+.footer__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 460px) {
+    .footer__block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer__line{
+    height: 20px;
+    background: url(../img/line.png) top center no-repeat;    
+}
+.footer__icon{
+    text-decoration: none;  
+    padding: 0px 5px;
+}
+.footer__icon--grey{
+    color: $light-gray-color;
+}

@@ -1,0 +1,53 @@
+@mixin width ($width){
+    max-width: $width;
+}
+@mixin margin ($margin){
+    margin: $margin;
+}
+
+@mixin text-size-lg ($width, $font-size){
+    max-width: $width;
+    font:{
+    size: $font-size;
+    family:$montserrat-bold;
+    weight: bold;
+    }
+    color: $dark-gray-color;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+@mixin text-size-md ($width, $margin, $font-family, $color) {
+    max-width: $width;
+    margin: $margin;
+    font:{
+    size: 17px;
+    family: $font-family;
+    }
+    color: $color;
+    text-align: left;
+}
+
+@mixin text-size-sm {
+    margin: 20px 0px;
+    font:{
+    size: 15px;
+    family:$open-sans;
+    }
+    color: $light-gray-color;
+    text-align: left;
+}
+
+@mixin element-after {
+    &:after{
+        content:'.';
+        color: $red-color;
+        font-family: $montserrat-regular;
+    }
+}
+@mixin arrow {
+    &:after{
+        content:' \2192';
+        color: $red-color;
+    }
+}
