@@ -1,31 +1,31 @@
 .text-block__title{
-    @include text-size-lg (250px, 25px);
+	@include title-style (250px, $lg-font-size);
 }
 .text-block__title--red-dot{
-    @include text-size-lg (250px, 25px);
-    @include element-after;
+	@include title-style (250px, $lg-font-size);
+	@include dot;
 }
 
 .text-block__sub-title{
-    @include text-size-md (350px, 5px 0px, $open-sans, $dark-gray-color);
+	@include subtitle-style (350px, 5px 0px, $open-sans, $dark-gray-color);
 }
 .text-block__sub-title--red{
-    @include text-size-md (350px, 5px 0px, $open-sans, $red-color);
+	@include subtitle-style (350px, 5px 0px, $open-sans, $red-color);
 }
 
 .text-block__paragraph{
-    @include text-size-sm;
+	@include paragraph-style (300px, 20px 0px, $open-sans,$light-gray-color);
 }
 
 .text-block__anchor{
-    font:{
-    size: 15px;
-    family:$open-sans-bold;
-    }
-    color: $red-color;
-    text-align: left;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-weight: 550;
-    @include arrow;
+	font:{
+	size: $sm-font-size;
+	family:$open-sans-bold;
+	}
+	color: $red-color;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 550;
+	@include arrow;
 }
