@@ -38,7 +38,7 @@
   font-family: ﻿OpenSans-Bold, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -104,7 +104,7 @@
 @media (max-width: 950px) {
   .intelligence-section__title--red-dot {
     max-width: 500px;
-    font-size: 23px;
+    font-size: 25px;
     font-family: Montserrat-Bold, sans-serif;
     font-weight: bold;
     color: #314a5b;
@@ -131,14 +131,6 @@
   font-size: 17px;
   font-family: ﻿OpenSans-Bold, sans-serif;
   color: #314a5b;
-  text-align: left;
-}
-
-.intelligence-section__paragraph {
-  margin: 20px 0px;
-  font-size: 15px;
-  font-family: OpenSans, ﻿Helvetica, sans-serif;
-  color: #9aa0ab;
   text-align: left;
 }
 
@@ -255,7 +247,8 @@
 }
 
 .footer__copyright {
-  margin: 20px 0px;
+  max-width: 20px 0px;
+  margin: OpenSans, ﻿Helvetica, sans-serif;
   font-size: 15px;
   font-family: OpenSans, ﻿Helvetica, sans-serif;
   color: #9aa0ab;
@@ -407,6 +400,7 @@
 }
 
 .text-block__paragraph {
+  max-width: 300px;
   margin: 20px 0px;
   font-size: 15px;
   font-family: OpenSans, ﻿Helvetica, sans-serif;
