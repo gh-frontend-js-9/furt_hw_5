@@ -10,7 +10,7 @@
     &__text {
     font-family: $montserrat-regular;
     color: $white-color;
-    font-size: 15px;
+    font-size: $sm-font-size;
     &:after{
         content:'.';
         font-weight: 600;

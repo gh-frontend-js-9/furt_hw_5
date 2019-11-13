@@ -1,5 +1,4 @@
 %wrapper {
-    position: relative;
     margin: 0 auto;
     max-width: 940px;
     width: 100%;
@@ -12,6 +11,8 @@
 
 .intelligence-section__wrapper{
     @extend %wrapper;
+    position: relative;
+    z-index: 1;
 }
 @media (max-width: 950px) {
     .intelligence-section__wrapper{
@@ -28,26 +29,24 @@
     }
 }
 .intelligence-section__title--red-dot {
-    @include text-size-lg (500px, 45px);
-    @include element-after;
+    @include title-style (500px, $xl-font-size);
+    @include dot;
 }
 @media (max-width: 950px) {
     .intelligence-section__title--red-dot {
-        @include text-size-lg (500px, 30px);
+        @include title-style (500px, $lg-font-size);
     }
 }
 @media (max-width: 500px) {
     .intelligence-section__title--red-dot {
-        @include text-size-lg (500px, 20px);
+        @include title-style (300px, $md-font-size);
     }
 }
 
 .intelligence-section__sub-title {
-    @include text-size-md (370px, 10px 0px 50px, $open-sans-bold, $dark-gray-color);
+    @include subtitle-style (370px, 10px 0px 50px, $open-sans-bold, $dark-gray-color);
 }
-.intelligence-section__paragraph {
-    @include text-size-sm;
-}
+
 
 .peace-of--section__wrapper{
     @extend %wrapper;
@@ -129,7 +128,7 @@
 
 .flex-row{
     display: flex;
-    @include margin (30px 0px 100px);
+    @include m-space (30px 0px 100px);
     &__developer{
         display: flex;
         align-items: flex-start;

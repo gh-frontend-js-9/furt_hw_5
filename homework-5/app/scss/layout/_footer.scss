@@ -2,7 +2,7 @@
     @extend %wrapper;
 }
 .footer__copyright{
-    @include text-size-sm;
+    @include paragraph-style (20px 0px, $open-sans,$light-gray-color);
     color: $lighter-gray-color;
     padding: 0px 10px;
 }
