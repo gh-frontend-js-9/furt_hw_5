@@ -1,11 +1,11 @@
 @mixin width ($width){
     max-width: $width;
 }
-@mixin margin ($margin){
+@mixin m-space ($margin){
     margin: $margin;
 }
 
-@mixin text-size-lg ($width, $font-size){
+@mixin title-style ($width, $font-size){
     max-width: $width;
     font:{
     size: $font-size;
@@ -17,28 +17,29 @@
     text-transform: uppercase;
 }
 
-@mixin text-size-md ($width, $margin, $font-family, $color) {
+@mixin subtitle-style ($width, $margin, $font-family, $color) {
     max-width: $width;
     margin: $margin;
     font:{
-    size: 17px;
+    size: $md-font-size;
     family: $font-family;
     }
     color: $color;
     text-align: left;
 }
 
-@mixin text-size-sm {
-    margin: 20px 0px;
+@mixin paragraph-style ( $width, $margin, $font-family, $color:$light-gray-color) {
+    max-width: $width;
+    margin: $margin;
     font:{
-    size: 15px;
+    size: $sm-font-size;
     family:$open-sans;
     }
-    color: $light-gray-color;
+    color: $color;
     text-align: left;
 }
 
-@mixin element-after {
+@mixin dot {
     &:after{
         content:'.';
         color: $red-color;
