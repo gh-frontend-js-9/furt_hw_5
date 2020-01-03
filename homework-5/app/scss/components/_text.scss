@@ -1,0 +1,31 @@
+.text-block__title{
+	@include title-style (250px, $lg-font-size);
+}
+.text-block__title--red-dot{
+	@include title-style (250px, $lg-font-size);
+	@include dot;
+}
+
+.text-block__sub-title{
+	@include subtitle-style (350px, 5px 0px, $open-sans, $dark-gray-color);
+}
+.text-block__sub-title--red{
+	@include subtitle-style (350px, 5px 0px, $open-sans, $red-color);
+}
+
+.text-block__paragraph{
+	@include paragraph-style (300px, 20px 0px, $open-sans,$light-gray-color);
+}
+
+.text-block__anchor{
+	font:{
+	size: $sm-font-size;
+	family:$open-sans-bold;
+	}
+	color: $red-color;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 550;
+	@include arrow;
+}

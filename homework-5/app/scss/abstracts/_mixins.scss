@@ -1,0 +1,54 @@
+@mixin width ($width){
+    max-width: $width;
+}
+@mixin m-space ($margin){
+    margin: $margin;
+}
+
+@mixin title-style ($width, $font-size){
+    max-width: $width;
+    font:{
+    size: $font-size;
+    family:$montserrat-bold;
+    weight: bold;
+    }
+    color: $dark-gray-color;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+@mixin subtitle-style ($width, $margin, $font-family, $color) {
+    max-width: $width;
+    margin: $margin;
+    font:{
+    size: $md-font-size;
+    family: $font-family;
+    }
+    color: $color;
+    text-align: left;
+}
+
+@mixin paragraph-style ( $width, $margin, $font-family, $color:$light-gray-color) {
+    max-width: $width;
+    margin: $margin;
+    font:{
+    size: $sm-font-size;
+    family:$open-sans;
+    }
+    color: $color;
+    text-align: left;
+}
+
+@mixin dot {
+    &:after{
+        content:'.';
+        color: $red-color;
+        font-family: $montserrat-regular;
+    }
+}
+@mixin arrow {
+    &:after{
+        content:' \2192';
+        color: $red-color;
+    }
+}

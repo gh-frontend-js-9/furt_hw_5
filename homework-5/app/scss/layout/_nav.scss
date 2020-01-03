@@ -1,0 +1,27 @@
+.nav-bar {
+    display: flex;
+    padding-top: 10px;
+    &__list{
+        flex-direction: row;
+        display: flex;
+        padding: 15px;
+    }
+    &__text {
+    color: $black-color;
+    font-family: $open-sans-bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $sm-font-size;
+    font-weight: 600;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+.fa-icon--red{
+    color: $red-color;
+}
